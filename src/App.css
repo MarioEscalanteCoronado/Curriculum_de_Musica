@@ -1,0 +1,137 @@
+/* Base general */
+body {
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  background-color: #121212;
+  color: #ffffff;
+}
+
+/* Navbar */
+.p-menubar {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(30, 30, 30, 0.7));
+  border: none;
+  box-shadow: none;
+  backdrop-filter: blur(10px); /* efecto glassmorphism */
+}
+.p-menubar .p-menuitem-link {
+  color: #1db954 !important;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.p-menubar .p-menuitem-link:hover {
+  color: #34e17f;
+}
+.p-menubar .p-menuitem-link:active {
+  background-color: transparent;
+  color: #1ed760;
+}
+.p-menubar-root-list {
+  justify-content: flex-end;
+  width: 100%;
+}
+
+
+.navbar-brand {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-left: 1rem;
+  white-space: nowrap;  /* ✅ Evita saltos de línea */
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+/* Secciones generales */
+section {
+  padding: 3rem 2rem;
+}
+section h1,
+section h2,
+section h3 {
+  color: #1db954;
+}
+section p {
+  line-height: 1.8;
+  padding-left: 100px;
+  padding-right: 100px;
+  font-size: 1.4rem;
+}
+
+/* Inicio */
+#inicio {
+  background-image: url('/public/john-matychuk-gUK3lA3K7Yo-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+  padding-top: 6rem;
+  padding-bottom: 4rem ;
+  color: white ;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+}
+#inicio img {
+  margin-top: 1rem;
+  border: 4px solid #1db954;
+}
+
+/* Galería de proyectos */
+.p-galleria {
+  background-color: #181818;
+  border: none;
+}
+.p-galleria .p-galleria-thumbnail-container {
+  background-color: #0d0d0d;
+}
+.p-galleria-thumbnail-item-content img {
+  object-fit: cover;
+}
+
+/* Contacto */
+#contacto {
+  background-color: #191414;
+  color: #ffffff;
+}
+#contacto strong {
+  color: #1db954;
+}
+
+/* Footer */
+footer {
+  background-color: #0d0d0d;
+  color: #aaa;
+  font-size: 0.9rem;
+  padding: 1rem;
+}
+
+/* Botones primereact */
+.p-button {
+  background-color: #1db954;
+  border: none;
+}
+.p-button:hover {
+  background-color: #1ed760;
+  color: #000;
+}
+
+/* Listas */
+ul {
+  padding-left: 1.2rem;
+}
+li::marker {
+  color: #1db954;
+}
+/* Forzar el color del texto e íconos dentro del Menubar */
+.p-menubar .p-menuitem-link,
+.p-menubar .p-menuitem-link .p-menuitem-text,
+.p-menubar .p-menuitem-link .pi {
+  color: #1db954 !important;
+}
+
+/* Hover con tono más brillante */
+.p-menubar .p-menuitem-link:hover,
+.p-menubar .p-menuitem-link:hover .p-menuitem-text,
+.p-menubar .p-menuitem-link:hover .pi {
+  color: #34e17f !important;
+}
